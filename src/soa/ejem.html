@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Cursos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="app" class="container">
+        <div class="card bg-dark text-white">
+            <div class="card-body">
+                <h1>Cursos</h1>
+                <div class="form-group row">
+                    <label for="categoria_id" class="col-sm-2 col-form-label">Categoria</label>
+                    <div class="col-sm-10">
+                        <select v-model="categoria_id" class="form-control">
+                            <option value="0">--Seleccionar--</option>
+                            <option v-for="item in categorias" :value="item.id">{{item.nombre}}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label"></label>
+                    <div class="col-sm-10">
+                        <button class="btn btn-primary" @click="fetchCursos">Buscar</button>
+                        <button class="btn btn-success" @click="editarCurso(0)">Nuevo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3>Lista de Cursos</h3>
+        <table class="table">
+            <tr>
+                <th>Nombre</th>
+                <th>Créditos</th>
+                <th>Categoría</th>
+                <th>Acciones</th>
+            </tr>
+            <tr v-for="item in cursos">
+                <td>{{item.nombres}}</td>
+                <td>{{item.creditos}}</td>
+                <td>{{item.categoria_id}}</td>
+                <td>
+                    <button class="btn btn-primary" @click="editarCurso(item.id)">Modificar</button>
+                    <button class="btn btn-danger" @click="eliminarCurso(item.id)">Eliminar</button>
+                </td>
+            </tr>
+        </table>
+    
+        <div class="modal fade" id="modalCurso" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Editar Curso</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="nombres" class="col-sm-2 col-form-label">Nombre</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="nombres" v-model="curso.nombres" placeholder="Nombre">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="creditos" class="col-sm-2 col-form-label">Creditos</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="creditos" v-model="curso.creditos" placeholder="Creditos">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="categoria_id" class="col-sm-2 col-form-label">Categoria</label>
+                                <div class="col-sm-10">
+                                    <select id="categoria_id" v-model="curso.categoria_id" class="form-control">
+                                        <option value="0">--Seleccionar--</option>
+                                        <option v-for="item in categorias" :value="item.id">{{item.nombre}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" v-if="curso.id==0" @click="insertarCurso">Insertar</button>
+                        <button type="button" class="btn btn-primary" v-if="curso.id!=0" @click="grabarCurso">Guardar</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.5.1/vue-resource.js"></script>
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                nombre: "Gestión de proyectos II",
+                categoria_id: 0,
+                profesor: "Jorge Hernandez",
+                categorias: [],
+                cursos: [],
+                curso: [{id: 0}],
+                login: "",
+                password: ""
+            },
+            mounted: function () {
+                // this.fetchCategorias();
+                this.fetchProyectos();
+            },
+            methods: {
+                // fetchCategorias: function () {
+                //     var url = "http://localhost:52084/api/publicacioncontenidos/ListarCategoriasPublicas";
+                //     this.$http.get(url).then(function (response) {
+                //         this.categorias = response.body;
+                //     });
+                // },
+                fetchProyectos: function(){
+                    var url="http://localhost:52084/api/publicacioncontenidos/"
+
+                },
+                fetchCursos: function () {
+                    var url = "http://localhost:52084/api/publicacioncontenidos/ListarCursosPublicos?categoria_id=" + this.categoria_id;
+                    this.$http.get(url).then(function (response) {
+                        this.cursos = response.body;
+                    });
+                },
+                fetchCurso: function (id) {
+                    var url = "http://localhost:52084/api/publicacioncontenidos/ObtenerCurso?id=" + id;
+                    this.$http.get(url).then(function (response) {
+                        this.curso = response.body;
+                    });
+                },
+                editarCurso: function (id) {
+                    this.fetchCurso(id);
+                    $('#modalCurso').modal('show');
+                },
+                insertarCurso: function () {
+                    var url = "http://localhost:52084/api/publicacioncontenidos/InsertarCurso";
+                    this.$http.post(url, this.curso).then(function (response) {
+                        $('#modalCurso').modal('hide');
+                        this.fetchCursos();
+                    });
+                },
+                grabarCurso: function () {
+                    var url = "http://localhost:52084/api/publicacioncontenidos/ActualizarCurso?id=" + this.curso.id;
+                    this.$http.put(url, this.curso).then(function (response) {
+                        $('#modalCurso').modal('hide');
+                        this.fetchCursos();
+                    });
+                },
+                eliminarCurso: function (id) {
+                    var url = "http://localhost:52084/api/publicacioncontenidos/EliminarCurso?id=" + id;
+                    this.$http.delete(url).then(function (response) {
+                        this.fetchCursos();
+                    });
+                }
+
+            }
+        });
+    </script>
+
+</body>
+</html>

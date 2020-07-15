@@ -1,0 +1,592 @@
+{
+    "temary": [
+        {
+            "name": "Bloque 1",
+            "data": [
+                {
+                    "name": "Presentación del proyecto",
+                    "completado": true,
+                    "data": [
+                        {
+                            "tipo": "pdf",
+                            "visto": true,
+                            "data": "PDF"
+                        },
+                        {
+                            "tipo": "actividad",
+                            "visto": false,
+                            "name": "Actividad 1",
+                            "urldescarga": ""
+                        },
+                        {
+                            "tipo": "idea",
+                            "visto": false,
+                            "name": "IDEA FUERZA",
+                            "ideas": [
+                                "¡¡¡Lavándote las manos, salvas tu vida y la de los demás!!!",
+                                "Manteniendo el distanciamiento social evitarás el contagio del COVID-19.",
+                                "Desinfectando siempre evitarás contagiarte"
+                            ]
+                        },
+                        {
+                            "tipo": "preguntas",
+                            "visto": false,
+                            "name": "preguntas",
+                            "preguntas": [
+                                "¿Que hacer para informar a los y las estudiantes y sus familias sobre las principales acciones que deben realizar  para evitar el contagio y la propagacion del COVID-19?",
+                                "¿Como podemos apoyar emocionalmete a nuestros estudiantes frente a los problemas que estan  desarrollandose por el aislamiento social?"
+                            ]
+                        },
+                        {
+                            "tipo": "formulario",
+                            "visto": false,
+                            "name": "FORMULARIO",
+                            "texto": [
+                                {
+                                    "pregunta": "La docente Luisa se enteró que cuatro de sus estudiantes presentan síntomas del COVID-19 y tiene temor de que se propague en su comunidad. Para ello, informa a los padres de familia que realicen las siguientes acciones para evitar la propagación. Elige una o más alternativas según creas conveniente.",
+                                    "tipo": "checkbox",
+                                    "respuestas": [
+                                        {
+                                            "opcion": "Aislamiento social, lavado de manos, distanciamiento social, uso de mascarillas y desinfecciónrespuesta 1"
+                                        },
+                                        {
+                                            "opcion": "Distanciamiento social, lavado de manos, cuarentena, uso de mascarillas y desinfección"
+                                        },
+                                        {
+                                            "opcion": "Lavado de manos, aislamiento social, distanciamiento social y uso de mascarillas"
+                                        },
+                                        {
+                                            "opcion": "Uso de mascarillas, distanciamiento social, lavado de manos y aislamiento social"
+                                        }
+                                    ],
+                                    "respuestasSeleccionadas": []
+                                },
+                                {
+                                    "pregunta": "¿Cuáles, de los siguientes, son los síntomas de una persona que padece COVID-19?Escoge una o más alternativas según creas conveniente.",
+                                    "tipo": "checkbox",
+                                    "respuestas": [
+                                        {
+                                            "opcion": "Dificultad para respirar"
+                                        },
+                                        {
+                                            "opcion": "Tos y dolor de garganta"
+                                        },
+                                        {
+                                            "opcion": "Lagrimeo constante"
+                                        },
+                                        {
+                                            "opcion": "Fiebre alta"
+                                        },
+                                        {
+                                            "opcion": "Dolor de estómago"
+                                        }
+                                    ],
+                                    "respuestasSeleccionadas": []
+                                },
+                                {
+                                    "pregunta": ".¿Qué medidas puedes tomar para prevenir la propagación del COVID-19 en la institución educativa? (Puedes marcar más de una alternativa)",
+                                    "tipo": "checkbox",
+                                    "respuestas": [
+                                        {
+                                            "opcion": "Promover, en los miembros de la comunidad educativa, comportamientos saludables como           cubrirse la boca con un pañuelo o con el antebrazo al toser o estornudar, y mantener el 1          distanciamiento social"
+                                        },
+                                        {
+                                            "opcion": "Mantener las ventanas abiertas para una mejor ventilación"
+                                        },
+                                        {
+                                            "opcion": "Asistir a las reuniones masivas convocadas en tu barrio para informarse del COVID–19"
+                                        },
+                                        {
+                                            "opcion": "Promover el lavado de manos antes de tomar alimentos y después de ir al baño"
+                                        },
+                                        {
+                                            "opcion": "Promover el distanciamiento social en los estudiantes de manera permanente en las diversas áreas de la I.E.respues"
+                                        }
+                                    ],
+                                    "respuestasSeleccionadas": []
+                                },
+                                {
+                                    "pregunta": "El director Alexander piensa promover, para la planificación, experiencias de      aprendizaje a partir de situaciones particulares presentadas en el contexto del       COVID-19. Indica qué tienen que tomar en cuenta en las situaciones problemáticas.      (Puedes marcar más de una alternativa)",
+                                    "tipo": "checkbox",
+                                    "respuestas": [
+                                        {
+                                            "opcion": "A) Situaciones relacionadas al cuidado de la salud, al uso del tiempo libre, a la convivencia en          el hogar, el ambiente y la sobrevivencia"
+                                        },
+                                        {
+                                            "opcion": "B) Situaciones relacionadas al bienestar emocional, la ciudadanía y el bien común"
+                                        },
+                                        {
+                                            "opcion": "D) Situaciones relacionadas al uso de las tecnologías, al uso del tiempo libre, a la convivencia           en el hogar, el ambiente y la sobrevivencia"
+                                        },
+                                        {
+                                            "opcion": "a y b"
+                                        },
+                                        {
+                                            "opcion": "b y c"
+                                        }
+                                    ],
+                                    "respuestasSeleccionadas": []
+                                },
+                                {
+                                    "pregunta": "Para recabar información sobre las emociones que están experimentando los niños y niñas, los      niveles de estrés, angustia o ansiedad a los cuales han estado expuestos, ¿cuál es la       estrategia que debe utilizar la docente Katherine para brindar soporte socioemocional a       sus estudiantes? (Selecciona las opciones que consideres correctas)",
+                                    "tipo": "checkbox",
+                                    "respuestas": [
+                                        {
+                                            "opcion": "El árbol de las emociones"
+                                        },
+                                        {
+                                            "opcion": "Retos saludables"
+                                        },
+                                        {
+                                            "opcion": "¡Cuidándonos familia!"
+                                        },
+                                        {
+                                            "opcion": "Explorando nuestras emociones"
+                                        }
+                                    ],
+                                    "respuestasSeleccionadas": []
+                                }
+                            ]
+                        },
+                        {
+                            "tipo": "encuesta",
+                            "visto": false,
+                            "name": "ENCUESTA",
+                            "texto": [
+                                {
+                                    "aspecto": "Nivel de involucramiento y compromiso con el desarrollo del módulo 0",
+                                    "preguntas": [
+                                        {
+                                            "pregunta": "¿Te fue suficiente el tiempo para el desarrollo de las actividades propuestas?"
+                                        },
+                                        {
+                                            "pregunta": "¿Te has sentido involucrado y comprometido con el desarrollo del módulo 0?"
+                                        },
+                                        {
+                                            "pregunta": "¿Te has sentido motivado al ir desarrollando las actividades propuestas en la          sección 1: Situación problematizadora?"
+                                        },
+                                        {
+                                            "pregunta": "¿Te has sentido motivado al ir desarrollando las actividades propuestas en la sección 2: Análisis a la luz de la teoría?"
+                                        },
+                                        {
+                                            "pregunta": "¿Te has sentido motivado al ir desarrollando las actividades propuestas en la          sección 3: Manos a la obra?"
+                                        },
+                                        {
+                                            "pregunta": "¿Te has sentido motivado al ir respondiendo el cuestionario en la sección 4:          Evaluando lo aprendido?"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "aspecto": "Sobre el contenido y metodología del módulo 0",
+                                    "preguntas": [
+                                        {
+                                            "pregunta": "¿Te fue fácil participar en el foro chat?  "
+                                        },
+                                        {
+                                            "pregunta": "¿Tuviste dificultades al realizar las actividades planteadas en la sección 1:       Situación problematizadora?"
+                                        },
+                                        {
+                                            "pregunta": "¿Tuviste dificultades al realizar las actividades planteadas en la sección 2:          Análisis a la luz de la teoría?"
+                                        },
+                                        {
+                                            "pregunta": "¿Tuviste dificultades al realizar las actividades planteadas en la sección 3:          Manos a la obra?"
+                                        },
+                                        {
+                                            "pregunta": "¿Tuviste dificultades al realizar las actividades planteadas en la sección 4:          Evaluando lo aprendido?"
+                                        },
+                                        {
+                                            "pregunta": "¿Las lecturas fueron fáciles de entender para el desarrollo de las          actividades?"
+                                        },
+                                        {
+                                            "pregunta": "¿Consideras haber fortalecido tu práctica pedagógica al desarrollar el módulo          0?"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "¿A quiénes atenderemos?",
+                    "completado": true,
+                    "data": [
+                        {
+                            "tipo": "pdf",
+                            "visto": true,
+                            "data": "PDF"
+                        },
+                        {
+                            "tipo": "actividad",
+                            "visto": false,
+                            "name": "Actividad 1",
+                            "urldescarga": ""
+                        },
+                        {
+                            "tipo": "idea",
+                            "visto": false,
+                            "name": "IDEA FUERZA",
+                            "ideas": [
+                                "¡¡¡Lavándote las manos, salvas tu vida y la de los demás!!!",
+                                "Manteniendo el distanciamiento social evitarás el contagio del COVID-19.",
+                                "Desinfectando siempre evitarás contagiarte"
+                            ]
+                        },
+                        {
+                            "tipo": "preguntas",
+                            "visto": false,
+                            "name": "preguntas",
+                            "preguntas": [
+                                "¿Que hacer para informar a los y las estudiantes y sus familias sobre las principales acciones que deben realizar  para evitar el contagio y la propagacion del COVID-19?",
+                                "¿Como podemos apoyar emocionalmete a nuestros estudiantes frente a los problemas que estan  desarrollandose por el aislamiento social?"
+                            ]
+                        },
+                        {
+                            "tipo": "formulario",
+                            "visto": false,
+                            "name": "FORMULARIO",
+                            "texto": [
+                                {
+                                    "pregunta": "La docente Luisa se enteró que cuatro de sus estudiantes presentan síntomas del COVID-19 y tiene temor de que se propague en su comunidad. Para ello, informa a los padres de familia que realicen las siguientes acciones para evitar la propagación. Elige una o más alternativas según creas conveniente.",
+                                    "tipo": "checkbox",
+                                    "respuestas": [
+                                        {
+                                            "opcion": "Aislamiento social, lavado de manos, distanciamiento social, uso de mascarillas y desinfecciónrespuesta 1"
+                                        },
+                                        {
+                                            "opcion": "Distanciamiento social, lavado de manos, cuarentena, uso de mascarillas y desinfección"
+                                        },
+                                        {
+                                            "opcion": "Lavado de manos, aislamiento social, distanciamiento social y uso de mascarillas"
+                                        },
+                                        {
+                                            "opcion": "Uso de mascarillas, distanciamiento social, lavado de manos y aislamiento social"
+                                        }
+                                    ],
+                                    "respuestasSeleccionadas": []
+                                },
+                                {
+                                    "pregunta": "¿Cuáles, de los siguientes, son los síntomas de una persona que padece COVID-19?Escoge una o más alternativas según creas conveniente.",
+                                    "tipo": "checkbox",
+                                    "respuestas": [
+                                        {
+                                            "opcion": "Dificultad para respirar"
+                                        },
+                                        {
+                                            "opcion": "Tos y dolor de garganta"
+                                        },
+                                        {
+                                            "opcion": "Lagrimeo constante"
+                                        },
+                                        {
+                                            "opcion": "Fiebre alta"
+                                        },
+                                        {
+                                            "opcion": "Dolor de estómago"
+                                        }
+                                    ],
+                                    "respuestasSeleccionadas": []
+                                },
+                                {
+                                    "pregunta": ".¿Qué medidas puedes tomar para prevenir la propagación del COVID-19 en la institución educativa? (Puedes marcar más de una alternativa)",
+                                    "tipo": "checkbox",
+                                    "respuestas": [
+                                        {
+                                            "opcion": "Promover, en los miembros de la comunidad educativa, comportamientos saludables como           cubrirse la boca con un pañuelo o con el antebrazo al toser o estornudar, y mantener el 1          distanciamiento social"
+                                        },
+                                        {
+                                            "opcion": "Mantener las ventanas abiertas para una mejor ventilación"
+                                        },
+                                        {
+                                            "opcion": "Asistir a las reuniones masivas convocadas en tu barrio para informarse del COVID–19"
+                                        },
+                                        {
+                                            "opcion": "Promover el lavado de manos antes de tomar alimentos y después de ir al baño"
+                                        },
+                                        {
+                                            "opcion": "Promover el distanciamiento social en los estudiantes de manera permanente en las diversas áreas de la I.E.respues"
+                                        }
+                                    ],
+                                    "respuestasSeleccionadas": []
+                                },
+                                {
+                                    "pregunta": "El director Alexander piensa promover, para la planificación, experiencias de      aprendizaje a partir de situaciones particulares presentadas en el contexto del       COVID-19. Indica qué tienen que tomar en cuenta en las situaciones problemáticas.      (Puedes marcar más de una alternativa)",
+                                    "tipo": "checkbox",
+                                    "respuestas": [
+                                        {
+                                            "opcion": "A) Situaciones relacionadas al cuidado de la salud, al uso del tiempo libre, a la convivencia en          el hogar, el ambiente y la sobrevivencia"
+                                        },
+                                        {
+                                            "opcion": "B) Situaciones relacionadas al bienestar emocional, la ciudadanía y el bien común"
+                                        },
+                                        {
+                                            "opcion": "D) Situaciones relacionadas al uso de las tecnologías, al uso del tiempo libre, a la convivencia           en el hogar, el ambiente y la sobrevivencia"
+                                        },
+                                        {
+                                            "opcion": "a y b"
+                                        },
+                                        {
+                                            "opcion": "b y c"
+                                        }
+                                    ],
+                                    "respuestasSeleccionadas": []
+                                },
+                                {
+                                    "pregunta": "Para recabar información sobre las emociones que están experimentando los niños y niñas, los      niveles de estrés, angustia o ansiedad a los cuales han estado expuestos, ¿cuál es la       estrategia que debe utilizar la docente Katherine para brindar soporte socioemocional a       sus estudiantes? (Selecciona las opciones que consideres correctas)",
+                                    "tipo": "checkbox",
+                                    "respuestas": [
+                                        {
+                                            "opcion": "El árbol de las emociones"
+                                        },
+                                        {
+                                            "opcion": "Retos saludables"
+                                        },
+                                        {
+                                            "opcion": "¡Cuidándonos familia!"
+                                        },
+                                        {
+                                            "opcion": "Explorando nuestras emociones"
+                                        }
+                                    ],
+                                    "respuestasSeleccionadas": []
+                                }
+                            ]
+                        },
+                        {
+                            "tipo": "encuesta",
+                            "visto": false,
+                            "name": "ENCUESTA",
+                            "texto": [
+                                {
+                                    "aspecto": "Nivel de involucramiento y compromiso con el desarrollo del módulo 0",
+                                    "preguntas": [
+                                        {
+                                            "pregunta": "¿Te fue suficiente el tiempo para el desarrollo de las actividades propuestas?"
+                                        },
+                                        {
+                                            "pregunta": "¿Te has sentido involucrado y comprometido con el desarrollo del módulo 0?"
+                                        },
+                                        {
+                                            "pregunta": "¿Te has sentido motivado al ir desarrollando las actividades propuestas en la          sección 1: Situación problematizadora?"
+                                        },
+                                        {
+                                            "pregunta": "¿Te has sentido motivado al ir desarrollando las actividades propuestas en la sección 2: Análisis a la luz de la teoría?"
+                                        },
+                                        {
+                                            "pregunta": "¿Te has sentido motivado al ir desarrollando las actividades propuestas en la          sección 3: Manos a la obra?"
+                                        },
+                                        {
+                                            "pregunta": "¿Te has sentido motivado al ir respondiendo el cuestionario en la sección 4:          Evaluando lo aprendido?"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "aspecto": "Sobre el contenido y metodología del módulo 0",
+                                    "preguntas": [
+                                        {
+                                            "pregunta": "¿Te fue fácil participar en el foro chat?  "
+                                        },
+                                        {
+                                            "pregunta": "¿Tuviste dificultades al realizar las actividades planteadas en la sección 1:       Situación problematizadora?"
+                                        },
+                                        {
+                                            "pregunta": "¿Tuviste dificultades al realizar las actividades planteadas en la sección 2:          Análisis a la luz de la teoría?"
+                                        },
+                                        {
+                                            "pregunta": "¿Tuviste dificultades al realizar las actividades planteadas en la sección 3:          Manos a la obra?"
+                                        },
+                                        {
+                                            "pregunta": "¿Tuviste dificultades al realizar las actividades planteadas en la sección 4:          Evaluando lo aprendido?"
+                                        },
+                                        {
+                                            "pregunta": "¿Las lecturas fueron fáciles de entender para el desarrollo de las          actividades?"
+                                        },
+                                        {
+                                            "pregunta": "¿Consideras haber fortalecido tu práctica pedagógica al desarrollar el módulo          0?"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "¿Cuál es nuestra propuesta?",
+                    "completado": true,
+                    "data": [
+                        {
+                            "tipo": "pdf",
+                            "visto": true,
+                            "data": "PDF"
+                        },
+                        {
+                            "tipo": "actividad",
+                            "visto": false,
+                            "name": "Actividad 1",
+                            "urldescarga": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "¿Cómo se articulan los componentes?",
+                    "completado": true,
+                    "data": [
+                        {
+                            "tipo": "pdf",
+                            "visto": true,
+                            "data": "PDF"
+                        },
+                        {
+                            "tipo": "actividad",
+                            "visto": false,
+                            "name": "Actividad 1",
+                            "urldescarga": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Presentación del proyecto",
+                    "completado": true,
+                    "data": [
+                        {
+                            "tipo": "pdf",
+                            "visto": true,
+                            "data": "PDF"
+                        },
+                        {
+                            "tipo": "actividad",
+                            "visto": false,
+                            "name": "Actividad 1",
+                            "urldescarga": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "¿A quiénes atenderemos?",
+                    "completado": true,
+                    "data": [
+                        {
+                            "tipo": "pdf",
+                            "visto": true,
+                            "data": "PDF"
+                        },
+                        {
+                            "tipo": "actividad",
+                            "visto": false,
+                            "name": "Actividad 1",
+                            "urldescarga": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "¿Cuál es nuestra propuesta?",
+                    "completado": true,
+                    "data": [
+                        {
+                            "tipo": "pdf",
+                            "visto": true,
+                            "data": "PDF"
+                        },
+                        {
+                            "tipo": "actividad",
+                            "visto": false,
+                            "name": "Actividad 1",
+                            "urldescarga": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "¿Cómo se articulan los componentes?",
+                    "completado": true,
+                    "data": [
+                        {
+                            "tipo": "pdf",
+                            "visto": true,
+                            "data": "PDF"
+                        },
+                        {
+                            "tipo": "actividad",
+                            "visto": false,
+                            "name": "Actividad 1",
+                            "urldescarga": ""
+                        }
+                    ]
+                }
+            ],
+            "completado": true
+        },
+        {
+            "name": "Bloque 2",
+            "data": [
+                {
+                    "name": "Sección 1: Situación problemática",
+                    "completado": false,
+                    "data": [
+                        {
+                            "tipo": "pdf",
+                            "visto": true,
+                            "data": "PDF"
+                        },
+                        {
+                            "tipo": "actividad",
+                            "visto": false,
+                            "name": "Actividad 1",
+                            "urldescarga": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Sección 2: Análisis a la luz de la teoría",
+                    "completado": false,
+                    "data": [
+                        {
+                            "tipo": "pdf",
+                            "visto": true,
+                            "data": "PDF"
+                        },
+                        {
+                            "tipo": "actividad",
+                            "visto": false,
+                            "name": "Actividad 1",
+                            "urldescarga": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Sección 3: Manos a la obra",
+                    "completado": false,
+                    "data": [
+                        {
+                            "tipo": "pdf",
+                            "visto": true,
+                            "data": "PDF"
+                        },
+                        {
+                            "tipo": "actividad",
+                            "visto": false,
+                            "name": "Actividad 1",
+                            "urldescarga": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Sección 4: Evaluando lo aprendido",
+                    "completado": false,
+                    "data": [
+                        {
+                            "tipo": "pdf",
+                            "visto": true,
+                            "data": "PDF"
+                        },
+                        {
+                            "tipo": "actividad",
+                            "visto": false,
+                            "name": "Actividad 1",
+                            "urldescarga": ""
+                        }
+                    ]
+                }
+            ],
+            "completado": false
+        }
+    ]
+}

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cursos</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+      integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="app" class="container">
+      <div class="card bg-dark text-white">
+        <div class="card-body">
+          <h1>Cursos</h1>
+          <div class="form-group row">
+            <label for="categoria_id" class="col-sm-2 col-form-label"
+              >Categoria</label
+            >
+            <div class="col-sm-10">
+              <!-- <select v-model="categoria_id" class="form-control">
+                            <option value="0">--Seleccionar--</option>
+                            <option v-for="item in categorias" :value="item.id">{{item.nombre}}</option>
+                        </select> -->
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+              <!-- <button class="btn btn-primary" @click="fetchCursos">Buscar</button> -->
+              <button class="btn btn-success" @click="crearProyecto">
+                Nuevo Proyecto
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>Lista de Cursos</h3>
+      <table class="table">
+        <tr>
+          <th>Nombre</th>
+          <th>Créditos</th>
+          <th>Categoría</th>
+          <th>Acciones</th>
+        </tr>
+        <tr v-for="item in cursos">
+          <td>{{item.nombres}}</td>
+          <td>{{item.creditos}}</td>
+          <td>{{item.categoria_id}}</td>
+          <td>
+            <!-- <button class="btn btn-primary" @click="editarCurso(item.id)">Modificar</button>
+                    <button class="btn btn-danger" @click="eliminarCurso(item.id)">Eliminar</button> -->
+          </td>
+        </tr>
+      </table>
+
+      <div
+        class="modal fade"
+        id="modalCurso"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                Editar Curso
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group row">
+                  <label for="nombres" class="col-sm-2 col-form-label"
+                    >Nombre</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nombreProyecto"
+                      v-model="proyecto.nombreProyecto"
+                      placeholder="mombre del rpyect"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="creditos" class="col-sm-2 col-form-label"
+                    >idStudent: 2</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="idEstudiante"
+                      v-model="proyecto.idEstudiante"
+                      placeholder="idStudent"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="creditos" class="col-sm-2 col-form-label"
+                    >idCurso: 1 - 4</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="idCurso"
+                      v-model="proyecto.idCurso"
+                      placeholder="udcurso"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="s" class="col-sm-2 col-form-label">archivo</label>
+                  <div class="col-sm-10">
+                    <input
+                      id="fileUpload"
+                      name="fileUpload"
+                      type="file"
+                      @change="onFileChange"
+                    />
+                  </div>
+                </div>
+                <!-- <div class="form-group row">
+                                <label for="creditos" class="col-sm-2 col-form-label">idCurso: 1 - 4</label>
+                                <div class="col-sm-10">
+                                    <input type="file" class="form-control" id="creditos" v-model="proyecto.archivoProyecto" placeholder="udcurso">
+                                </div>
+                            </div> -->
+              </form>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-primary" v-if="curso.id==0" @click="insertarCurso">Insertar</button> -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                @click="insertarProyecto"
+              >
+                Guardar
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.5.1/vue-resource.js"></script>
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          nombre: "Gestión de proyectos II",
+          categoria_id: 0,
+          profesor: "Jorge Hernandez",
+          categorias: [],
+          cursos: [],
+          curso: [{ id: 0 }],
+          login: "",
+          password: "",
+          proyectos: [],
+          proyecto: {
+            nombreProyecto: "proyecto pruebita",
+            idEstudiante: 2,
+            idCurso: 4,
+            contentType: "url del video",
+          },
+          pago_cursodt: {
+            idPago: 1,
+            idCurso: 1,
+            descripcionpago: "se cancelo efectivamente",
+          },
+          model: {
+            Nombre: "esto es un nombre",
+            Ruta: "Christian2",
+            Extension: "Parrales 2",
+            Descripcion: "1994-07-15",
+            // fileUpload: []
+          },
+          fileUpload: [],
+          idEstudiante: 2,
+          idCurso: 4,
+        },
+        mounted: function () {
+          // this.fetchCategorias();
+          this.fetchProyectos();
+        },
+        methods: {
+          // fetchCategorias: function () {
+          //     var url = "http://localhost:52084/api/publicacioncontenidos/ListarCategoriasPublicas";
+          //     this.$http.get(url).then(function (response) {
+          //         this.categorias = response.body;
+          //     });
+          // },
+          // http://localhost:63938/
+          onFileChange(e) {
+            var files = e.target.files || e.dataTransfer.files;
+            if (!files.length) return;
+            // this.proyecto.archivoProyecto(files[0]);
+
+            console.log("hola");
+            console.log(e.target.files);
+            console.log(e.target.files[0].FileContent);
+            this.fileUpload = files[0];
+            // this.model.fileUpload = files[0];
+            // console.log(this.proyecto.archivoProyecto);
+            // console.log(this.model.fileUpload);
+            console.log(this.fileUpload);
+          },
+
+          fetchProyectos: function () {
+            console.log("si entra al metodo");
+            var url = "http://localhost:63938/api/project/list";
+            this.$http.get(url).then(function (response) {
+              // this.proyectos = response.body;
+              console.log(response.body);
+            });
+          },
+          crearProyecto: function () {
+            $("#modalCurso").modal("show");
+          },
+          //   insertarProyecto: function () {
+          //     console.log("si");
+          //     console.log(this.proyecto);
+          //     var url = "http://localhost:63938/api/project/publish/";
+          //     this.$http.post(url, this.proyecto).then(function (response) {
+          //       $("#modalCurso").modal("hide");
+          //       this.fetchProyectos();
+          //       console.log("si");
+          //       console.log(response);
+          //     });
+          //   },
+          insertarProyecto: function () {
+            console.log("si");
+            console.log(this.fileUpload);
+            // console.log(this.model.fileUpload);
+            // const formData = new FormData();
+            let data = new FormData();
+            data.append('name', 'my-file')
+            data.append("fileUpload", this.fileUpload);
+            setTimeout(() => {
+              console.log(...data);
+            }, 2000);
+            let config = {
+              header: {
+                "Content-Type": "multipart/form-data",
+              },
+            };
+
+            this.$http.post(`http://localhost:63938/api/proyecto/subir`, ...data, config)
+              .then(function (response) {
+                $("#modalCurso").modal("hide");
+                // this.fetchProyectos();
+                console.log("si");
+                console.log(response);
+              });
+
+            // var url = `http://localhost:63938/api/proyecto/subir`;
+            // this.$http
+            //   .post(`http://localhost:63938/api/proyecto/subir`, ...formData, {
+            //     headers: {
+            //       "Content-Type": "multipart/form-data",
+            //     },
+            //   })
+            //   .then(function (response) {
+            //     $("#modalCurso").modal("hide");
+            //     // this.fetchProyectos();
+            //     console.log("si");
+            //     console.log(response);
+            //   });
+          },
+          // fetchCursos: function () {
+          //     var url = "http://localhost:52084/api/publicacioncontenidos/ListarCursosPublicos?categoria_id=" + this.categoria_id;
+          //     this.$http.get(url).then(function (response) {
+          //         this.cursos = response.body;
+          //     });
+          // },
+          // fetchCurso: function (id) {
+          //     var url = "http://localhost:52084/api/publicacioncontenidos/ObtenerCurso?id=" + id;
+          //     this.$http.get(url).then(function (response) {
+          //         this.curso = response.body;
+          //     });
+          // },
+          // editarCurso: function (id) {
+          //     this.fetchCurso(id);
+          //     $('#modalCurso').modal('show');
+          // },
+          // insertarCurso: function () {
+          //     var url = "http://localhost:52084/api/publicacioncontenidos/InsertarCurso";
+          //     this.$http.post(url, this.curso).then(function (response) {
+          //         $('#modalCurso').modal('hide');
+          //         this.fetchCursos();
+          //     });
+          // },
+          // grabarCurso: function () {
+          //     var url = "http://localhost:52084/api/publicacioncontenidos/ActualizarCurso?id=" + this.curso.id;
+          //     this.$http.put(url, this.curso).then(function (response) {
+          //         $('#modalCurso').modal('hide');
+          //         this.fetchCursos();
+          //     });
+          // },
+          // eliminarCurso: function (id) {
+          //     var url = "http://localhost:52084/api/publicacioncontenidos/EliminarCurso?id=" + id;
+          //     this.$http.delete(url).then(function (response) {
+          //         this.fetchCursos();
+          //     });
+          // }
+        },
+      });
+    </script>
+  </body>
+</html>

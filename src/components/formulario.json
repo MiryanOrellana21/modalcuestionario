@@ -1,0 +1,112 @@
+{
+    "TIPO": "formulario",
+    "MODULO": 0,
+    "BLOQUE": 2,
+    "SECCION": 5,
+    "DATA": [
+        {
+            "pregunta": "La docente Luisa se enteró que cuatro de sus estudiantes presentan síntomas del COVID-19 y tiene temor de que se propague en su comunidad. Para ello, informa a los padres de familia que realicen las siguientes acciones para evitar la propagación. Elige una o más alternativas según creas conveniente.",
+            "tipo": "checkbox",
+            "respuestas": [
+                {
+                    "opcion": "Aislamiento social, lavado de manos, distanciamiento social, uso de mascarillas y desinfecciónrespuesta 1"
+                },
+                {
+                    "opcion": "Distanciamiento social, lavado de manos, cuarentena, uso de mascarillas y desinfección"
+                },
+                {
+                    "opcion": "Lavado de manos, aislamiento social, distanciamiento social y uso de mascarillas"
+                },
+                {
+                    "opcion": "Uso de mascarillas, distanciamiento social, lavado de manos y aislamiento social"
+                }
+            ],
+            "respuestasSeleccionadas": []
+        },
+        {
+            "pregunta": "¿Cuáles, de los siguientes, son los síntomas de una persona que padece COVID-19?Escoge una o más alternativas según creas conveniente.",
+            "tipo": "checkbox",
+            "respuestas": [
+                {
+                    "opcion": "Dificultad para respirar"
+                },
+                {
+                    "opcion": "Tos y dolor de garganta"
+                },
+                {
+                    "opcion": "Lagrimeo constante"
+                },
+                {
+                    "opcion": "Fiebre alta"
+                },
+                {
+                    "opcion": "Dolor de estómago"
+                }
+            ],
+            "respuestasSeleccionadas": []
+        },
+        {
+            "pregunta": ".¿Qué medidas puedes tomar para prevenir la propagación del COVID-19 en la institución educativa? (Puedes marcar más de una alternativa)",
+            "tipo": "checkbox",
+            "respuestas": [
+                {
+                    "opcion": "Promover, en los miembros de la comunidad educativa, comportamientos saludables como           cubrirse la boca con un pañuelo o con el antebrazo al toser o estornudar, y mantener el 1          distanciamiento social"
+                },
+                {
+                    "opcion": "Mantener las ventanas abiertas para una mejor ventilación"
+                },
+                {
+                    "opcion": "Asistir a las reuniones masivas convocadas en tu barrio para informarse del COVID–19"
+                },
+                {
+                    "opcion": "Promover el lavado de manos antes de tomar alimentos y después de ir al baño"
+                },
+                {
+                    "opcion": "Promover el distanciamiento social en los estudiantes de manera permanente en las diversas áreas de la I.E.respues"
+                }
+            ],
+            "respuestasSeleccionadas": []
+        },
+        {
+            "pregunta": "El director Alexander piensa promover, para la planificación, experiencias de      aprendizaje a partir de situaciones particulares presentadas en el contexto del       COVID-19. Indica qué tienen que tomar en cuenta en las situaciones problemáticas.      (Puedes marcar más de una alternativa)",
+            "tipo": "checkbox",
+            "respuestas": [
+                {
+                    "opcion": "A) Situaciones relacionadas al cuidado de la salud, al uso del tiempo libre, a la convivencia en          el hogar, el ambiente y la sobrevivencia"
+                },
+                {
+                    "opcion": "B) Situaciones relacionadas al bienestar emocional, la ciudadanía y el bien común"
+                },
+                {
+                    "opcion": "D) Situaciones relacionadas al uso de las tecnologías, al uso del tiempo libre, a la convivencia           en el hogar, el ambiente y la sobrevivencia"
+                },
+                {
+                    "opcion": "a y b"
+                },
+                {
+                    "opcion": "b y c"
+                }
+            ],
+            "respuestasSeleccionadas": []
+        },
+        {
+            "pregunta": "Para recabar información sobre las emociones que están experimentando los niños y niñas, los      niveles de estrés, angustia o ansiedad a los cuales han estado expuestos, ¿cuál es la       estrategia que debe utilizar la docente Katherine para brindar soporte socioemocional a       sus estudiantes? (Selecciona las opciones que consideres correctas)",
+            "tipo": "checkbox",
+            "respuestas": [
+                {
+                    "opcion": "El árbol de las emociones"
+                },
+                {
+                    "opcion": "Retos saludables"
+                },
+                {
+                    "opcion": "¡Cuidándonos familia!"
+                },
+                {
+                    "opcion": "Explorando nuestras emociones"
+                }
+            ],
+            "respuestasSeleccionadas": []
+        }
+    ]
+}

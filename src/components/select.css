@@ -1,0 +1,118 @@
+/* body {
+  background: #26c4dc;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  width: 205px;
+  margin: calc(50vh - 100px) auto 0;
+}
+
+.msd {
+  width: 100%;
+  position: relative;
+  user-select: none;
+  color: #434b3a;
+  margin: 0 0 15px;
+}
+.msd_label {
+  background: #fff;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  padding: 0 20px;
+  border-radius: 5px;
+  position: relative;
+}
+.msd_label_icon {
+  position: absolute;
+  font-size: 13px;
+  right: 20px;
+  top: 15px;
+}
+.msd_options {
+  overflow-y: scroll;
+  height: 130px;
+}
+.msd_options_container {
+  height: 140px;
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  top: 35px;
+  padding: 5px;
+  box-sizing: border-box;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: block;
+  z-index: 9999;
+}
+.msd_options_option {
+  padding: 13px 15px;
+  font-size: 14px;
+  line-height: 1.3;
+  background: #f4f4f4;
+  position: relative;
+  display: block;
+}
+.msd_options_option:nth-child(even) {
+  background: #ededed;
+}
+.msd_options_option:after {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #888;
+  top: 15px;
+  right: 10px;
+  content: "";
+  border-radius: 50%;
+}
+.msd_options_option-check:after {
+  background: #888;
+  color: #fff;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  font-size: 8px;
+  line-height: 15px;
+  text-align: center;
+}
+.msd_options_checkbox {
+  display: block;
+} */
+
+.multiselect {
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: block;
+  border: 1px #dadada solid;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+#checkboxes label:hover {
+  background-color: #1e90ff;
+}

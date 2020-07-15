@@ -1,0 +1,57 @@
+{
+    "TIPO": "formulario",
+    "MODULO": 0,
+    "BLOQUE": 2,
+    "SECCION": 5,
+    "DATA": [
+        {
+            "aspecto": "Nivel de involucramiento y compromiso con el desarrollo del módulo 0",
+            "preguntas": [
+                {
+                    "pregunta": "¿Te fue suficiente el tiempo para el desarrollo de las actividades propuestas?"
+                },
+                {
+                    "pregunta": "¿Te has sentido involucrado y comprometido con el desarrollo del módulo 0?"
+                },
+                {
+                    "pregunta": "¿Te has sentido motivado al ir desarrollando las actividades propuestas en la          sección 1: Situación problematizadora?"
+                },
+                {
+                    "pregunta": "¿Te has sentido motivado al ir desarrollando las actividades propuestas en la sección 2: Análisis a la luz de la teoría?"
+                },
+                {
+                    "pregunta": "¿Te has sentido motivado al ir desarrollando las actividades propuestas en la          sección 3: Manos a la obra?"
+                },
+                {
+                    "pregunta": "¿Te has sentido motivado al ir respondiendo el cuestionario en la sección 4:          Evaluando lo aprendido?"
+                }
+            ]
+        },
+        {
+            "aspecto": "Sobre el contenido y metodología del módulo 0",
+            "preguntas": [
+                {
+                    "pregunta": "¿Te fue fácil participar en el foro chat?  "
+                },
+                {
+                    "pregunta": "¿Tuviste dificultades al realizar las actividades planteadas en la sección 1:       Situación problematizadora?"
+                },
+                {
+                    "pregunta": "¿Tuviste dificultades al realizar las actividades planteadas en la sección 2:          Análisis a la luz de la teoría?"
+                },
+                {
+                    "pregunta": "¿Tuviste dificultades al realizar las actividades planteadas en la sección 3:          Manos a la obra?"
+                },
+                {
+                    "pregunta": "¿Tuviste dificultades al realizar las actividades planteadas en la sección 4:          Evaluando lo aprendido?"
+                },
+                {
+                    "pregunta": "¿Las lecturas fueron fáciles de entender para el desarrollo de las          actividades?"
+                },
+                {
+                    "pregunta": "¿Consideras haber fortalecido tu práctica pedagógica al desarrollar el módulo          0?"
+                }
+            ]
+        }
+    ]
+}
